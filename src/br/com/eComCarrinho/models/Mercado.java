@@ -1,4 +1,4 @@
 package br.com.eComCarrinho.models;
 
-public abstract class Produto {
+public class Mercado {
 }

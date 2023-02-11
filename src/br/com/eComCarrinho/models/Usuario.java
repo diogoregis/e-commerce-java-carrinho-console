@@ -15,5 +15,24 @@ public abstract class Usuario {
         return ++numId;
     }
 
+    public int getId() {
+        return id;
+    }
 
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public boolean isAdm() {
+        return isAdm;
+    }
+
+    public void setAdm(boolean adm) {
+        isAdm = adm;
+    }
 }
