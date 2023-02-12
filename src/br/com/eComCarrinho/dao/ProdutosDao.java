@@ -24,5 +24,11 @@ public class ProdutosDao {
     public Produto retornaProdutoIndex(int index){
         return produtoList.get(index);
     }
+    public Produto removeProduto(int index){
+        return produtoList.remove(index);
+    }
+    public Produto produtoUpdate(int index, Produto produto){
+        return produtoList.set(index, produto);
+    }
 
 }

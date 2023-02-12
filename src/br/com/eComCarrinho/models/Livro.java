@@ -19,4 +19,11 @@ public class Livro extends Produto{
         System.out.println("Essa obra conta: ");
         System.out.println(this.getSinopse());
     }
+
+    @Override
+    public String toString() {
+        return "Livro{" + "nome= " + getNome() + " editora= " + getMarca() +
+                " sinopse='" + sinopse + '\'' +
+                '}';
+    }
 }
