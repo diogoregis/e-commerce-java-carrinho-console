@@ -1,7 +1,11 @@
 package br.com.eComCarrinho.models;
 
 public class ClientePessoaFisica extends Usuario{
-    public ClientePessoaFisica(String nome) {
-        super(nome);
+
+    private static final String SENHA = "123";
+    private String cpf;
+    public ClientePessoaFisica(String nome, String cpf) {
+        super(nome, SENHA);
+        this.cpf = cpf;
     }
 }

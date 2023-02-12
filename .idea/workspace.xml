@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add class">
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Sessao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/repository/IUsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/services/UsuarioService.java" afterDir="false" />
+    <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add class sessao e controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/dao/UsuariosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/dao/UsuariosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/ClientePessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/ClientePessoaFisica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/ClientePessoaJuridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/ClientePessoaJuridica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Informatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Informatica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Mercado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Mercado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Sessao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Sessao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676077747797</updated>
       <workItem from="1676077749241" duration="600000" />
-      <workItem from="1676133535074" duration="9078000" />
+      <workItem from="1676133535074" duration="11254000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, add packs">
       <created>1676152930973</created>
@@ -92,15 +90,34 @@
       <option name="project" value="LOCAL" />
       <updated>1676156578970</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add class sessao e controllers">
+      <created>1676161827773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676161827773</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, add packs" />
     <MESSAGE value="Add class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add class" />
+    <MESSAGE value="Add class sessao e controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add class sessao e controllers" />
   </component>
 </project>

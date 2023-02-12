@@ -5,10 +5,12 @@ public abstract class Usuario {
     private static int numId;
     private int id;
     private String nome;
+    private String senha;
     private boolean isAdm;
-    public Usuario (String nome){
+    public Usuario (String nome, String senha){
         this.id = proximoNum();
         this.nome = nome;
+        this.senha = senha;
     }
 
     private int proximoNum(){

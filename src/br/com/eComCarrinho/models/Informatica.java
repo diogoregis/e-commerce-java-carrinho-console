@@ -1,4 +1,26 @@
 package br.com.eComCarrinho.models;
 
-public class Informatica {
+import br.com.eComCarrinho.tools.Tools;
+
+public class Informatica extends Produto{
+
+    private boolean importado;
+    public Informatica(String nome, String marca, double preco, boolean importado) {
+        super(nome, marca, preco);
+        this.importado = importado;
+    }
+
+    public boolean isImportado() {
+        return importado;
+    }
+
+    public void maisInformacoes(){
+        System.out.println("(( " + this.getNome().toUpperCase() + " ))");
+        if(isImportado()){
+            System.out.println("(( IMPORTADO ))");
+        }else {
+            System.out.println("(( NACIONAL ))");
+        }
+        System.out.println("R$ " + Tools.precoFormata(this.getPreco()));
+    }
 }

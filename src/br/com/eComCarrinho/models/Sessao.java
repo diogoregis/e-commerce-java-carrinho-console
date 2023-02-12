@@ -15,4 +15,8 @@ public final class Sessao {
     public boolean isSessaoAtiva() {
         return sessaoAtiva;
     }
+
+    public void setSessaoAtiva(boolean sessaoAtiva) {
+        this.sessaoAtiva = sessaoAtiva;
+    }
 }
