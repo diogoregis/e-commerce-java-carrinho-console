@@ -4,15 +4,13 @@ import br.com.eComCarrinho.models.Usuario;
 import br.com.eComCarrinho.services.UsuarioService;
 
 public class UsuarioController {
-
-    private static final UsuarioController USUARIO_CONTROLLER = new UsuarioController();
-    private UsuarioController(){}
     private UsuarioService usuarioService = UsuarioService.getInstance();
-    public static UsuarioController getInstance(){
-        return USUARIO_CONTROLLER;
+    public boolean validaUsuarioAdm(Usuario usuario){
+        return usuario.isAdm();
     }
 
-    public void validaUsuarioAdm(Usuario usuario){
-
+    public void addUsuario(Usuario usuario){
+        usuarioService.addUsuarioList(usuario);
     }
+
 }

@@ -82,7 +82,7 @@
                     System.out.print("[ " + it + " ]");
                     System.out.println(" ");
                 }
-                System.out.println("                        [ TOTAL " + Tools.precoFormata(totalValorCarrinho()) + " ]");
+                System.out.println("                            [ TOTAL " + Tools.precoFormata(totalValorCarrinho()) + " ]");
             }
 
         }

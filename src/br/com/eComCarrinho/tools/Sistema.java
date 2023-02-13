@@ -1,4 +1,7 @@
 package br.com.eComCarrinho.tools;
 
-public class Sistema {
+public final class Sistema {
+
+
+
 }
