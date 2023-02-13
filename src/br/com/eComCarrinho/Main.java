@@ -1,5 +1,6 @@
 package br.com.eComCarrinho;
 
+import br.com.eComCarrinho.controllers.CarrinhoController;
 import br.com.eComCarrinho.controllers.ProdutoController;
 import br.com.eComCarrinho.exception.AddProdutoException;
 import br.com.eComCarrinho.models.*;
@@ -13,17 +14,28 @@ public class Main {
 
 
         ProdutoController produtoController = ProdutoController.getInstance();
-        Informatica informatica = new Informatica("Teclado", "DL", 19.90,false);
-        Livro livro = new Livro("Os Mascates", "Chuva", 17.90,"Novo Livro");
-        Mercado mercado = new Mercado("Feijão", "Turquesa", 15.90,"90 dias");
+        CarrinhoController carrinho = CarrinhoController.getInstance();
+        Informatica informatica = new Informatica("Teclado USB", "DL", 19.90,false);
+        Livro livro = new Livro("Os Mascates", "Chuva", 10.00,"Novo Livro");
+        Mercado mercado = new Mercado("Feijão Tops", "Turquesa", 20.90,"90 dias");
+        Mercado mercado2 = new Mercado("Feijão Tops", "Turquesa", 20.90,"90 dias");
+        Mercado mercado3 = new Mercado("Feijão Tops", "Turquesa", 20.90,"90 dias");
 
         produtoController.criarAddListaDireto(informatica);
         produtoController.criarAddListaDireto(livro);
         produtoController.criarAddListaDireto(mercado);
 
-        for (Produto produto: produtoController.retornaListAll()) {
-            System.out.println(produto.toString());
-        }
+        carrinho.verCarrinhoAtual();
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(informatica, 15));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(livro, 10));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado, 10));
+        System.out.println(" ");
+        carrinho.verCarrinhoAtual();
+        System.out.println(" ");
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado2, 10));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado3, 10));
+        System.out.println(" ");
+        carrinho.verCarrinhoAtual();
 
     }
 

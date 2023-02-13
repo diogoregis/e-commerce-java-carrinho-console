@@ -1,13 +1,9 @@
 package br.com.eComCarrinho.controllers;
 
 import br.com.eComCarrinho.exception.AddProdutoException;
-import br.com.eComCarrinho.models.Informatica;
-import br.com.eComCarrinho.models.Livro;
-import br.com.eComCarrinho.models.Mercado;
-import br.com.eComCarrinho.models.Produto;
+import br.com.eComCarrinho.models.*;
 import br.com.eComCarrinho.services.ProdutoService;
 
-import java.net.Proxy;
 import java.util.List;
 
 public class ProdutoController {

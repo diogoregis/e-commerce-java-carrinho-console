@@ -22,8 +22,8 @@ public class Livro extends Produto{
 
     @Override
     public String toString() {
-        return "Livro{" + "nome= " + getNome() + " editora= " + getMarca() +
-                " sinopse='" + sinopse + '\'' +
-                '}';
+        return " " +  getNome() + " | Editora: " + getMarca() +
+                " | " + sinopse + '\'' +
+                ' ';
     }
 }

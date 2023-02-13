@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add funções, controller, exceptiom Produto, acesso direto e add toString">
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/exception/AddProdutoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/repository/IProdutoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/services/ProdutoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/CarrinhoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/repository/ICarrinhoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/dao/ProdutosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/dao/ProdutosDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Sessao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Sessao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <updated>1676077747797</updated>
       <workItem from="1676077749241" duration="600000" />
       <workItem from="1676133535074" duration="13006000" />
-      <workItem from="1676235242920" duration="6754000" />
+      <workItem from="1676235242920" duration="14175000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, add packs">
       <created>1676152930973</created>
@@ -108,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676165345884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add funções, controller, exceptiom Produto, acesso direto e add toString">
+      <created>1676245896947</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676245896947</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
