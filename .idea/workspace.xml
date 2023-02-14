@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add novas funções aos controllers, criaçãode categorias, filtros por Marca e Categorias, correção do atualiza preço total por itens">
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/PagamentoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/repository/ICompareProd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/OrdenacaoNomeUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/OrdenacaoPrecoDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/OrdencaoNomeDown.java" afterDir="false" />
+    <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add comparadores, ajustande funções, resolvendo escopo adminstrador e cliente">
+      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Informatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Informatica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Mercado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Mercado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Tools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,7 @@
       <workItem from="1676077749241" duration="600000" />
       <workItem from="1676133535074" duration="13006000" />
       <workItem from="1676235242920" duration="15456000" />
-      <workItem from="1676333041286" duration="9873000" />
+      <workItem from="1676333041286" duration="14510000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, add packs">
       <created>1676152930973</created>
@@ -160,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676338007417</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add comparadores, ajustande funções, resolvendo escopo adminstrador e cliente">
+      <created>1676343052418</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676343052418</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +187,7 @@
     <MESSAGE value="Add funções, controller, exceptiom Produto, acesso direto e add toString" />
     <MESSAGE value="Add carrinho e funções" />
     <MESSAGE value="Add novas funções aos controllers, criaçãode categorias, filtros por Marca e Categorias, correção do atualiza preço total por itens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add novas funções aos controllers, criaçãode categorias, filtros por Marca e Categorias, correção do atualiza preço total por itens" />
+    <MESSAGE value="Add comparadores, ajustande funções, resolvendo escopo adminstrador e cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comparadores, ajustande funções, resolvendo escopo adminstrador e cliente" />
   </component>
 </project>

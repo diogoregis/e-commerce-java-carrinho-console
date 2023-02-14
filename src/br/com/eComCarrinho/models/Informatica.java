@@ -26,6 +26,12 @@ public class Informatica extends Produto{
     }
 
     @Override
+    public String toString() {
+        return " " + getNome() + " | " + getMarca() + " | " + Tools.precoFormata(getPreco()) +
+                " | " + (importado ? "IMP" : "NAC" );
+    }
+
+    @Override
     public int compareTo(Produto produto) {
         if (this.getPreco() < produto.getPreco()) {
             return -1;

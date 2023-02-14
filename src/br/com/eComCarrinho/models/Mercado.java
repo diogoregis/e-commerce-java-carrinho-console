@@ -1,5 +1,7 @@
 package br.com.eComCarrinho.models;
 
+import br.com.eComCarrinho.tools.Tools;
+
 public class Mercado extends Produto{
     private String validade;
     public Mercado(String nome, String marca, double preco, String validade) {
@@ -18,6 +20,12 @@ public class Mercado extends Produto{
     public void resumoValidade(){
         System.out.println("Produto: " + this.getNome());
         System.out.println("Validade: " + this.getValidade());
+    }
+
+    @Override
+    public String toString() {
+        return " " + getNome() + " | " + getMarca() + " | " + Tools.precoFormata(getPreco()) + " | " +
+                 getValidade();
     }
 
     public int compareTo(Produto produto){

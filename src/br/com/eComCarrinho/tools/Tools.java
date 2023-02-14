@@ -44,6 +44,10 @@ public class Tools {
         return ANSI_BLUE + texto + ANSI_RESET;
     }
 
+    public static String textoFormatadoRed(String texto){
+        return ANSI_RED + texto + ANSI_RESET;
+    }
+
     public static String textoFormatadoYellow(String texto){
         return ANSI_YELLOW + texto + ANSI_RESET;
     }
