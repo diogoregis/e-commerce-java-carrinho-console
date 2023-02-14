@@ -10,5 +10,6 @@ public interface IProdutoRepository {
     public Produto retornaProdutoIndex(int index);
     public Produto removeProduto(int index);
     public Produto produtoUpdate(int index, Produto produto);
+    public boolean editarPrecoProduto(int index, double preco);
 
 }

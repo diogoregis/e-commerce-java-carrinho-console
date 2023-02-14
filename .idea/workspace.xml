@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add carrinho e funções">
+      <change afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/CarrinhoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/CarrinhoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/ProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/dao/ProdutosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/dao/ProdutosDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Informatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Informatica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Mercado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Mercado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/repository/IProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/repository/IProdutoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/services/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/services/ProdutoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +29,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -61,6 +72,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.eComCarrinho.Main" />
+      <module name="eComCarrinho" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.eComCarrinho.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +102,8 @@
       <updated>1676077747797</updated>
       <workItem from="1676077749241" duration="600000" />
       <workItem from="1676133535074" duration="13006000" />
-      <workItem from="1676235242920" duration="15333000" />
+      <workItem from="1676235242920" duration="15456000" />
+      <workItem from="1676333041286" duration="4826000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, add packs">
       <created>1676152930973</created>
@@ -115,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676256030753</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add carrinho e funções">
+      <created>1676257180127</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676257180127</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

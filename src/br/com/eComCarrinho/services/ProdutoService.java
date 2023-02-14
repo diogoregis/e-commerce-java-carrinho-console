@@ -36,4 +36,13 @@ public class ProdutoService implements IProdutoRepository {
     public Produto produtoUpdate(int index, Produto produto) {
         return produtosDao.produtoUpdate(index, produto);
     }
+
+    @Override
+    public boolean editarPrecoProduto(int index, double preco) {
+        if(produtosDao.editarPrecoProduto(index, preco) != null){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

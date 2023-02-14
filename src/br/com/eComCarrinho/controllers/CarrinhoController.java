@@ -21,7 +21,7 @@
 
             if(verificarSeExisteItemCarrinho(item)){
                 int index = procurarItemPorNome(item);
-                items.get(index).setQuantidade(items.get(index).getQuantidade() + item.getQuantidade());
+                items.get(index).atualizaQuantidadeValorTotal(item.getQuantidade());
                 System.out.println("Carrinho atualizado");
             } else {
                 if(items.add(item)){

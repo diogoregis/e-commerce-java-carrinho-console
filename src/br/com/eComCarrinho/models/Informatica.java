@@ -8,6 +8,7 @@ public class Informatica extends Produto{
     public Informatica(String nome, String marca, double preco, boolean importado) {
         super(nome, marca, preco);
         this.importado = importado;
+        this.setCategoria(Categoria.INFORMATICA);
     }
 
     public boolean isImportado() {

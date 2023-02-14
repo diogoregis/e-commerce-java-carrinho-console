@@ -5,6 +5,7 @@ public class Mercado extends Produto{
     public Mercado(String nome, String marca, double preco, String validade) {
         super(nome, marca, preco);
         this.validade = validade;
+        this.setCategoria(Categoria.MERCADO);
     }
     public String getValidade() {
         return validade;

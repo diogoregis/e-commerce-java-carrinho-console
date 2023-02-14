@@ -4,6 +4,7 @@ public abstract class Produto {
 
     private String nome, marca;
     private double preco;
+    private Categoria categoria;
     public Produto(String nome, String marca, double preco) {
         this.nome = nome;
         this.marca = marca;
@@ -32,6 +33,14 @@ public abstract class Produto {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     @Override

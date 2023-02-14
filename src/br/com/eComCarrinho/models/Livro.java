@@ -5,6 +5,7 @@ public class Livro extends Produto{
     public Livro(String nome, String marca, double preco, String sinopse) {
         super(nome, marca, preco);
         this.sinopse = sinopse;
+        this.setCategoria(Categoria.LIVRO);
     }
 
     public String getSinopse() {

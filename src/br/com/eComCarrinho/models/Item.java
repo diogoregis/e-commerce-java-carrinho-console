@@ -42,4 +42,11 @@ public class Item {
     public int getQuantidade(){
         return quantidade;
     }
+    public void atualizaQuantidadeValorTotal(int quantidade){
+        setQuantidade(this.getQuantidade() + quantidade);
+        setValorTotal(geraValorTotal());
+    }
+    public void setValorTotal(double valor){
+        this.valorTotal = valor;
+    }
 }

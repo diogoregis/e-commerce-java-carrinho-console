@@ -30,5 +30,9 @@ public class ProdutosDao {
     public Produto produtoUpdate(int index, Produto produto){
         return produtoList.set(index, produto);
     }
+    public Produto editarPrecoProduto(int index, double preco) {
+        produtoList.get(index).setPreco(preco);
+        return produtoList.get(index);
+    }
 
 }
