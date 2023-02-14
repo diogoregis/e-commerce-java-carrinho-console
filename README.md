@@ -11,7 +11,7 @@
 
 ## OBS:
 
-### Projeto está sem menu, basta rodar o Main e uma demostração de todas as funções serão impressas na tela do console, com dados ficticios.
+### Projeto está sem menu, basta rodar o Main e uma demostração de todas as funções será printada na tela do console, com dados ficticios.
 #### Existe a possibilidade de usar Menus via console, mas não foi criado ainda.
 
 ## Projeto Modulo 03 - ADA
