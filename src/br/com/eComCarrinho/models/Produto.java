@@ -1,6 +1,8 @@
 package br.com.eComCarrinho.models;
 
-public abstract class Produto {
+import br.com.eComCarrinho.repository.ICompareProd;
+
+public abstract class Produto implements ICompareProd {
 
     private String nome, marca;
     private double preco;
@@ -50,5 +52,24 @@ public abstract class Produto {
                 ", marca='" + marca + '\'' +
                 ", preco=" + preco +
                 '}';
+    }
+    public int compareTo(Produto produto){
+        if (this.preco < produto.getPreco()) {
+            return -1;
+        }
+        if (this.preco > produto.getPreco()) {
+            return 1;
+        }
+        return 0;
+    }
+
+    public int compareToNome(Produto produto){
+        if (this.preco < produto.getPreco()) {
+            return -1;
+        }
+        if (this.preco > produto.getPreco()) {
+            return 1;
+        }
+        return 0;
     }
 }

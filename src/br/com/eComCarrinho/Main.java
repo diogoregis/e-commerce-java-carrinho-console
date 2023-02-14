@@ -15,7 +15,7 @@ public class Main {
 
         ProdutoController produtoController = ProdutoController.getInstance();
         CarrinhoController carrinho = CarrinhoController.getInstance();
-        Informatica informatica = new Informatica("Teclado USB", "DL", 19.90,false);
+        Informatica informatica = new Informatica("Teclado USB", "DL", 39.90,false);
         Livro livro = new Livro("Os Mascates", "Chuva", 10.00,"Novo Livro");
         Mercado mercado = new Mercado("Feijão Tops", "Turquesa", 20.90,"90 dias");
         Mercado mercado2 = new Mercado("Feijão Tops", "Turquesa", 20.90,"90 dias");
@@ -33,6 +33,8 @@ public class Main {
         produtoController.printTodosProdutos();
         System.out.println(" ");
         produtoController.criarAddListaDireto(mercado4);
+        produtoController.printTodosProdutos();
+        System.out.println(" ");
         produtoController.editarProduto(3, 33.67);
         System.out.println(" ");
         produtoController.printTodosProdutos();
@@ -61,6 +63,16 @@ public class Main {
         produtoController.filtarProdutoPorMarca("DL");
         System.out.println(" ");
         produtoController.filtarProdutoPorMarca("Turquesa");
+        System.out.println(" ");
+        produtoController.printTodosProdutos();
+        System.out.println(" ");
+        produtoController.ordenadoPorPrecoCrescente();
+        System.out.println(" ");
+        produtoController.ordenadoPorNomeCrescente();
+        System.out.println(" ");
+        produtoController.ordenadoPorNomeDecrescente();
+        System.out.println(" ");
+        produtoController.ordenadoPorPrecoDecrecente();
 
     }
 

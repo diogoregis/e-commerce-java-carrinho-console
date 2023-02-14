@@ -3,8 +3,12 @@ package br.com.eComCarrinho.controllers;
 import br.com.eComCarrinho.exception.AddProdutoException;
 import br.com.eComCarrinho.models.*;
 import br.com.eComCarrinho.services.ProdutoService;
+import br.com.eComCarrinho.tools.OrdenacaoNomeUp;
+import br.com.eComCarrinho.tools.OrdenacaoPrecoDown;
+import br.com.eComCarrinho.tools.OrdencaoNomeDown;
 import br.com.eComCarrinho.tools.Tools;
 
+import java.util.Collections;
 import java.util.List;
 
 public class ProdutoController {
@@ -83,6 +87,41 @@ public class ProdutoController {
             if(produto.getMarca().toUpperCase().equals(marca.toUpperCase())){
                 System.out.println(produto);
             }
+        }
+    }
+
+    public void ordenadoPorPrecoCrescente(){
+        List<Produto> listaOrdenada = retornaListAll();
+        Collections.sort(listaOrdenada);
+        System.out.println("Produtos por MENOR PREÇO");
+        for(Produto produto : listaOrdenada){
+            System.out.println(produto);
+        }
+    }
+
+    public void ordenadoPorNomeCrescente() {
+        List<Produto> listaOrdenada = retornaListAll();
+        Collections.sort(listaOrdenada, new OrdenacaoNomeUp());
+        System.out.println("Produtos por NOME de A-Z");
+        for (Produto produto : listaOrdenada) {
+            System.out.println(produto);
+        }
+    }
+    public void ordenadoPorPrecoDecrecente(){
+        List<Produto> listaOrdenada = retornaListAll();
+        Collections.sort(listaOrdenada, new OrdenacaoPrecoDown());
+        System.out.println("Produtos por MAIOR PREÇO");
+        for(Produto produto : listaOrdenada){
+            System.out.println(produto);
+        }
+    }
+
+    public void ordenadoPorNomeDecrescente(){
+        List<Produto> listaOrdenada = retornaListAll();
+        Collections.sort(listaOrdenada, new OrdencaoNomeDown());
+        System.out.println("Produtos por NOME de Z-A");
+        for(Produto produto : listaOrdenada){
+            System.out.println(produto);
         }
     }
 

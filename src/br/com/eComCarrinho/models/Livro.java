@@ -27,4 +27,16 @@ public class Livro extends Produto{
                 " | " + sinopse + '\'' +
                 ' ';
     }
+
+    @Override
+    public int compareTo(Produto produto) {
+        if (this.getPreco() < produto.getPreco()) {
+            return -1;
+        }
+        if (this.getPreco() > produto.getPreco()) {
+            return 1;
+        }
+        return 0;
+    }
+
 }
