@@ -108,6 +108,8 @@ public final class Sistema {
         Tools.pause(1);
         System.out.println(Tools.textoFormatadoYellow("ORDENANDO LISTA DE PRODUTOS POR PREÇO <"));
         produtoController.ordenadoPorPrecoDecrecente();
+        System.out.println(" ");
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO CLIENTE PESSOA FISICA"));
     }
 
 
