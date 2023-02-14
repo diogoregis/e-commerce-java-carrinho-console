@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Add class sistema, formatando tostring models, top menu, main limpo">
+    <list default="true" id="3e192e9e-4ecd-4f96-8a73-d645c45aa071" name="Changes" comment="Incluindo formas de pagamento, validação Boleto e PIX">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/PagamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/controllers/PagamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/ClientePessoaJuridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/ClientePessoaJuridica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/FormaPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/FormaPagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/models/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/eComCarrinho/tools/Sistema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +96,7 @@
       <workItem from="1676077749241" duration="600000" />
       <workItem from="1676133535074" duration="13006000" />
       <workItem from="1676235242920" duration="15456000" />
-      <workItem from="1676333041286" duration="16167000" />
+      <workItem from="1676333041286" duration="20257000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, add packs">
       <created>1676152930973</created>
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676347794588</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Incluindo formas de pagamento, validação Boleto e PIX">
+      <created>1676349619806</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676349619806</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +202,7 @@
     <MESSAGE value="Add novas funções aos controllers, criaçãode categorias, filtros por Marca e Categorias, correção do atualiza preço total por itens" />
     <MESSAGE value="Add comparadores, ajustande funções, resolvendo escopo adminstrador e cliente" />
     <MESSAGE value="Add class sistema, formatando tostring models, top menu, main limpo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add class sistema, formatando tostring models, top menu, main limpo" />
+    <MESSAGE value="Incluindo formas de pagamento, validação Boleto e PIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Incluindo formas de pagamento, validação Boleto e PIX" />
   </component>
 </project>

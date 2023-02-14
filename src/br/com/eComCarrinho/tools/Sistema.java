@@ -1,6 +1,7 @@
 package br.com.eComCarrinho.tools;
 
 import br.com.eComCarrinho.controllers.CarrinhoController;
+import br.com.eComCarrinho.controllers.PagamentoController;
 import br.com.eComCarrinho.controllers.ProdutoController;
 import br.com.eComCarrinho.exception.AddProdutoException;
 import br.com.eComCarrinho.models.*;
@@ -14,6 +15,7 @@ public final class Sistema {
         ClientePessoaJuridica clientePessoaJuridica = new ClientePessoaJuridica("Zico FC", "75.203.281/0001-89");
         ProdutoController produtoController = ProdutoController.getInstance();
         CarrinhoController carrinho = CarrinhoController.getInstance();
+        PagamentoController pagamento = PagamentoController.getInstance();
         Sessao sessaoAdm = new Sessao(adm);
         Sessao sessaoClienteFisica = new Sessao(clientePessoaFisica);
         Sessao sessaoClienteJuridica = new Sessao(clientePessoaJuridica);
@@ -109,7 +111,67 @@ public final class Sistema {
         System.out.println(Tools.textoFormatadoYellow("ORDENANDO LISTA DE PRODUTOS POR PREÇO <"));
         produtoController.ordenadoPorPrecoDecrecente();
         System.out.println(" ");
-        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO CLIENTE PESSOA FISICA"));
+        Tools.pause(2);
+
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO CLIENTE TODOS (BOLETO, CARTÃO CREDITO e PIX)"));
+        pagamento.checkoutBoleto(sessaoClienteFisica, carrinho);
+        System.out.println(" ");
+
+        System.out.println(Tools.textoFormatadoBlue("ENCHENDO NOVAMENTE O CARRINHO"));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado2, 2));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado3, 1));
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO NO PIX DENTRO DO LIMITE"));
+        pagamento.checkoutPix(sessaoClienteFisica, carrinho);
+        System.out.println(" ");
+
+
+        System.out.println(Tools.textoFormatadoBlue("ENCHENDO NOVAMENTE O CARRINHO"));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado2, 19));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado3, 10));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado4, 10));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado4, 17));
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO NO PIX FORA DO LIMITE - ANTI-FRAUDE"));
+        System.out.println(" ");
+        pagamento.checkoutPix(sessaoClienteFisica, carrinho);
+        System.out.println(" ");
+
+        System.out.println(Tools.textoFormatadoBlue("ENCHENDO NOVAMENTE O CARRINHO"));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado2, 19));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado3, 10));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado4, 10));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado4, 17));
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO NO CARTÃO DE CREDITO FORA DO LIMITE - ANTI-FRAUDE"));
+        System.out.println(" ");
+        pagamento.checkoutCartaoCredito(sessaoClienteFisica, carrinho);
+        System.out.println(" ");
+
+
+        carrinho.esvaziarCarrinho();
+        System.out.println(Tools.textoFormatadoBlue("ENCHENDO NOVAMENTE O CARRINHO"));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado2, 2));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado3, 1));
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO NO CARTÃO DE CREDITO DENTRO DO LIMITE"));
+        System.out.println(" ");
+        pagamento.checkoutCartaoCredito(sessaoClienteFisica, carrinho);
+        Tools.pause(2);
+
+
+        System.out.println(" ");
+        System.out.println(Tools.textoFormatadoBlue("ENCHENDO NOVAMENTE O CARRINHO"));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(informatica, 17));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado3, 13));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(livro, 13));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado4, 12));
+        carrinho.colocarProdutoCarrinho(carrinho.criarItem(mercado4, 14));
+        System.out.println(Tools.textoFormatadoYellow("VALIDANDO PAGAMENTO CLIENTE PESSOA JURIDICA (FATURADO)"));
+        System.out.println(" ");
+        pagamento.checkoutFaturado(sessaoClienteJuridica, carrinho);
+
+        System.out.println(" ");
+        System.out.println(Tools.textoFormatadoPurple(".: FIM DA DEMOSTRAÇÃO :."));
+        Tools.teclaEncerrar();
+
+
     }
 
 

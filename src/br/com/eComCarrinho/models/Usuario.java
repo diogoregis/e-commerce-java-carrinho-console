@@ -7,6 +7,7 @@ public abstract class Usuario {
     private String nome;
     private String senha;
     private boolean isAdm;
+    private boolean empresa;
     public Usuario (String nome, String senha){
         this.id = proximoNum();
         this.nome = nome;
@@ -36,5 +37,13 @@ public abstract class Usuario {
 
     public void setAdm(boolean adm) {
         isAdm = adm;
+    }
+
+    public boolean isEmpresa(){
+        return empresa;
+    }
+
+    public void setEmpresa(boolean empresa) {
+        this.empresa = empresa;
     }
 }

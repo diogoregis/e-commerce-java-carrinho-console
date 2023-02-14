@@ -8,5 +8,10 @@ public class ClientePessoaJuridica extends Usuario{
     public ClientePessoaJuridica(String nome, String cnpj) {
         super(nome, SENHA);
         this.cnpj = cnpj;
+        setEmpresa(true);
+    }
+
+    public String getCnpj() {
+        return cnpj;
     }
 }
